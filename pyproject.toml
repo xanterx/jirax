@@ -1,0 +1,33 @@
+[project]
+name = "jirax"
+version = "0.0.1"
+description = "Pre Commit hook plugin for jira message"
+authors = [
+    {name = "xanterx", email = "10103455+xanterx@users.noreply.github.com"},
+]
+dependencies = []
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dynamic = ["version"]
+
+[project.urls]
+Homepage = ""
+
+[project.scripts]
+jirax = "jirax:main"
+
+[project.optional-dependencies]
+[tool]
+[tool.pdm]
+version = { use_scm = true }
+[tool.pdm.dev-dependencies]
+format = [
+    "black==22.1.0",
+    "mypy==0.931",
+    "isort==5.10.1",
+    "flake8==4.0.1",
+]
+
+[build-system]
+requires = ["pdm-pep517"]
+build-backend = "pdm.pep517.api"
