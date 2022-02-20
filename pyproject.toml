@@ -14,7 +14,7 @@ dynamic = ["version"]
 Homepage = ""
 
 [project.scripts]
-jirax = "jirax:main"
+add-jira = "jirax:main"
 
 [project.optional-dependencies]
 [tool]

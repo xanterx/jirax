@@ -1,0 +1,7 @@
+- id: add-jira
+  name: add-jira
+  description: Add jira id to commit message from branch
+  entry: add-jira
+  language: python
+  language_version: python3
+  stages: [commit-msg]
